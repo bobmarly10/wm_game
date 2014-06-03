@@ -5,6 +5,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'high_voltage'
+gem "therubyracer"
 gem 'mysql2'
 gem 'airbrake'
 
