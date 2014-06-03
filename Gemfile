@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '1.9.3'
 gem 'rails', '4.1.1'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
@@ -35,7 +35,7 @@ gem 'simple_form', github: 'plataformatec/simple_form', tag: 'v3.1.0.rc1'
 
 group :development do
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_21]
+  gem 'binding_of_caller', :platforms=>[:mri_19]
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
