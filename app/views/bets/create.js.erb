@@ -1,0 +1,9 @@
+<% if @bet.id %>
+  $("#games .status").html("<%= j render('bets/status') %>");
+  $("#game_<%= @bet.game_id %>").replaceWith("<%= j render(@bet.game) %>");
+  $("#top_stats .your_score .number").text("<%= current_user.score || 0 %>");
+  $("#top_stats .your_rank .number").text("<%= current_user.score_ranking || 0 %>");
+  $("#ranking").data("dirty", "yes");
+<% else %>
+  $("#game_<%= @bet.game_id %> .bet_form").html("<%= j render('bets/form', bet: @bet) %>");
+<% end %>

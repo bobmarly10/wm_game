@@ -1,13 +1,20 @@
 -# navigation styled for Bootstrap 3.0
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        = render 'layouts/navigation_links'
+    .navbar-header= link_to image_tag('logo.png'), root_path
+    .navbar-badge
+      .testcloud
+        &nbsp;
+        -#= link_to "www.testCloud.#{I18n.locale == :de ? 'de' : 'io'}", "https://www.testcloud.#{I18n.locale == :de ? 'de' : 'io'}/", target: :blank
+      .invite
+        %i.icon-users
+        = link_to t('.invite'), '', id: 'invite_friends', data: { message: t('.invite_message') }
+
+  #top_stats
+    .item.your_score
+      %label= t('.your_score')
+      .number= @current_user.score || 0
+    .item.your_rank
+      %label= t('.your_rank')
+      .number
+        <span>#</span>#{@current_user.score_ranking}

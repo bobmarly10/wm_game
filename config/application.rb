@@ -20,6 +20,14 @@ module WmGame
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
+    config.autoload_paths += %W(#{config.root}/app/jobs)
+
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'ALLOWALL'
+    }
+
+    config.middleware.use(Rack::Facebook::SignedRequest, app_id: '1436441209943933', secret: '6e69118995919d6e1784d3402567eb39')
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

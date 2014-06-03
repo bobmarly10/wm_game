@@ -1,0 +1,5 @@
+%li.user
+  = link_to image_tag(user.image_url, :size => '32x32'), user.link, target: :blank
+  .rank= "#<span>#{user.score_ranking}</span>".html_safe
+  .name= link_to user.name, user.link, target: :blank
+  .score= t('.points', count: user.score || 0)

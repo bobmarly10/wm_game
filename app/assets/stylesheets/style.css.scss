@@ -1,0 +1,65 @@
+
+@import "compass";
+
+body {
+
+  font-family:"Ubuntu";
+}
+
+h1 {
+  font-size:18px;
+  margin-bottom:7px;
+}
+h2 {
+  font-size:16px;
+  text-align:center;
+  margin-bottom:5px;
+}
+h3 {
+  font-size:15px;
+  margin-bottom:4px;
+}
+
+#main_container {
+  margin-top:10px;
+}
+
+.navbar-badge {
+  position:absolute;
+  top:12px;
+  left:50%;
+  margin-left:-40px;
+  .invite {
+    i {
+      font-size: 17px;
+      top: 2px;
+      position: relative;
+    }
+  }
+}
+
+
+#top_stats {
+  position:absolute;
+  top:0;
+  right:12px;
+  padding:8px 0 12px;
+  color:#333;
+  .item {
+    float:right;
+    margin:0 12px;
+    text-align:center;
+    font-size:12px;
+    label {
+      margin-bottom:0;
+    }
+  }
+  .number {
+    font-size:28px;
+    font-family:"Dosis";
+    line-height:30px;
+    span {
+      font-size:16px;
+    }
+  }
+}

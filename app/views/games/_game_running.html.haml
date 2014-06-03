@@ -1,0 +1,21 @@
+.team_a.col-md-3
+  .flag.flaga= image_tag("flags/#{game.running? ? 48 : 32}/#{game.team_a.country.downcase}.png", alt: t(game.team_a.country, :scope => 'countries'))
+  .country= t(game.team_a.country, :scope => 'countries')
+.col-md-2.goals
+  .goals_title= t('.goals_title')
+  .value= game.team_a_goals || 0
+.col-md-2
+  .your_bet
+    .bet_title= t('.your_bet')
+    - if bet = @bets.select {|b| b.game_id == game.id }.first
+      %span.bet_a= bet.team_a_goals
+      %span.dp :
+      %span.bet_b= bet.team_b_goals
+    - else
+      %p.no_bet= t('.no_bet')
+.col-md-2.goals
+  .goals_title= t('.goals_title')
+  .value= game.team_b_goals || 0
+.team_b.col-md-3
+  .flag.flagb= image_tag("flags/#{game.running? ? 48 : 32}/#{game.team_b.country.downcase}.png", alt: t(game.team_b.country, :scope => 'countries'))
+  .country= t(game.team_b.country, :scope => 'countries')

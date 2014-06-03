@@ -1,0 +1,4 @@
+- view ||= nil
+- @bets ||= current_user.fetch_bets
+%li.game.container{ :id => "game#{"_#{view}" if view}_#{game.id}", :class => "game_#{game.id} #{game.status}" }
+  = render "games/game_#{game.status}", game: game

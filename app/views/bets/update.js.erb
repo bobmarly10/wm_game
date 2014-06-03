@@ -1,0 +1,5 @@
+<% if @bet.errors.empty? %>
+  $("#game_<%= @bet.game_id %>").replaceWith("<%= j render(@bet.game) %>");
+<% else %>
+  $("#game_<%= @bet.game_id %> .bet_form").html("<%= j render('bets/form', bet: @bet) %>");
+<% end %>

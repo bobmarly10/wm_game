@@ -1,0 +1,188 @@
+
+@import "compass";
+
+#games {
+  .status {
+    //position:absolute;
+    //top:0;
+    //right:0;
+    width:30%;
+    text-align:center;
+    margin:7px auto 2px;
+    p {
+      font-size:10px;
+      font-weight:normal;
+      margin:0;
+    }
+    .progress {
+      height:10px;
+      .bar {
+        @include border-radius(4px);
+        height:10px;
+      }
+    }
+  }
+}
+
+ol.games {
+  margin:12px 0;
+  padding:0;
+  list-style-type:none;
+  li {
+    position:relative;
+    list-style-type:none;
+    @include clearfix;
+    margin:10px 0;
+    width:100%;
+    border-bottom:3px solid #DFDFDF;
+    padding:0 0 14px;
+    &.pending,
+    &.ended {
+      .flag {
+        margin-top:1px;
+        height:32px;
+      }
+      .country {
+        font-size:11px;
+        text-align:center;
+      }
+    }
+    &.running {
+      .flag {
+        height:45px;
+      }
+      .country {
+        font-size:12px;
+        font-weight:bold;
+        text-align:center;
+      }
+    }
+    .infos {
+      padding-top:5px;
+      text-align:center;
+      font-size:10px;
+      line-height:13px;
+      .round {
+        margin-left:-15px;
+        margin-right:-15px;
+      }
+      .date {
+        font-weight:bold;
+        margin-left:-15px;
+        margin-right:-15px;
+      }
+    }  
+    .button {
+      margin-top:5px;
+      text-align:center;
+      a.btn {
+        margin-top:3px;
+      }
+      .result {
+        margin:0 4px 5px;
+        font-size:16px;
+        font-family: 'Dosis';
+      }
+    }
+    .bet_form {
+      margin-top:5px;
+      display:none;
+      margin-left:-30px;
+      margin-right:-30px;
+      .help-block {
+        display:none;
+      }
+      form {
+        .row.buttons {
+          margin-top:3px;
+          input {
+          }
+        }
+        .form-group {
+          .col-sm-9 {
+            padding-left:0;
+            padding-right:0;
+          }
+          input {
+            width:35px;
+            padding-left:2px;
+            padding-right:2px;
+            text-align:center;
+          }
+        }
+      }
+    }
+    .goals {
+      font-size:26px;
+      line-height:17px;
+      text-align: center;
+      .goals_title {
+        font-size:10px;
+      }
+      .value {
+        font-family:"Dosis";
+      }
+    }
+    .your_bet {
+      position:relative;
+      top:2px;
+      font-size:10px;
+      text-align:center;
+      white-space:nowrap;
+      margin-left: -15px;
+      margin-right: -15px;
+      .dp, .bet_a, .bet_b {
+        font-size:18px;
+        font-family:"Dosis";
+      }
+    }
+    &.ended {
+      .your_points {
+        position:relative;
+        top:2px;
+        font-size:10px;
+        text-align:center;
+        white-space:nowrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        .points {
+          font-size:18px;
+          font-family:"Dosis";
+        }
+      }
+    }
+    .live_round {
+      text-align:center;
+      font-size:10px;
+      color:#999;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+}
+
+#next_game_countdown {
+  position:relative;
+  height:59px;
+  @include box-sizing(border-box);
+  padding: 5px 26px 0;
+  font-size: 30px;
+  text-align: center;
+  margin: 53px 0 23px 30px;
+  border:2px solid #DFDFDF;
+  border-left:0;
+  font-family: 'Dosis', sans-serif;
+}
+#game_indicator {
+  position:absolute;
+  top:-3px;
+  left:-30px;
+}
+
+#past_games_container {
+  position:relative;
+  top:16px;
+  border-top:3px solid #DFDFDF;
+  clear:left;
+  padding:12px 0;
+}

@@ -1,0 +1,8 @@
+- bet ||= Bet.new
+= simple_form_for bet, wrapper: :horizontal_form, remote: true, html: { class: 'form-inline' } do |f|
+  = f.input :game_id, as: :hidden
+  = f.input :team_a_goals, label: false, as: :string
+  \:
+  = f.input :team_b_goals, label: false, as: :string
+  .row.buttons
+    = f.button :submit, t('.save'), class: 'button-xs', :'data-disable-with' => '...'

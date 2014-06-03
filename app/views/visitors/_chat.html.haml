@@ -1,0 +1,5 @@
+%h2= t('.title', count: @current_games.size)
+
+#chat{ data: { messages: @chat_messages.to_json(ChatMessage.json_options), sysimg: image_path('chat_sys.png') } }
+  .input= render 'chat_messages/form'
+  .messages

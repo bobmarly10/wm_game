@@ -1,0 +1,5 @@
+sync_openliga:
+  cron: "0/30 * * * * *"
+  class: SyncOpenliga
+  queue: sync
+  description: "Synchronize game results with openligadb"
