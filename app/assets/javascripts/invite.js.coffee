@@ -1,7 +1,7 @@
 jQuery ->
 
   FB.init
-    appId: '1436441209943933',
+    appId: $("body").data('appid'),
     status: true,
     cookie: false,
     xfbml: true
