@@ -3,4 +3,4 @@
 
   #next_game_countdown
     = image_tag 'current_game.png', id: 'game_indicator'
-    #countdown{ :'data-timeleft' => (@next_game.start_at - Time.now).to_i, :'data-timestamp' => l(@next_game.start_at.utc, format: :countdown), :'data-timezone' => 0 }
+    #countdown{ data: { days: t('.days'), hours: t('.hours'), minutes: t('.minutes'), seconds: t('.seconds'), timestamp: l(@next_game.start_at.utc, format: :countdown), timezone: 0 } }

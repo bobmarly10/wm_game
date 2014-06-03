@@ -36,17 +36,17 @@ class VisitorsController < ApplicationController
 
   def current_games
     @current_games = Game.running.order('start_at')
-    render :partial => 'current_games'
+    render partial: 'current_games'
   end
 
   def past_games
     @past_games = Game.ended.order('start_at DESC')
-    render :partial => 'past_games'
+    render partial: 'past_games'
   end
 
   def next_game
     @next_game = Game.pending.order('start_at').first
-    render :partial => 'next_game'
+    render partial: 'next_game'
   end
 
   def ranking

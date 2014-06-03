@@ -40,7 +40,7 @@
           &.<%= icon %> {
             background:transparent;
             background-repeat:no-repeat;
-            background-image:image-path("chat/<%= icon %>.png");
+            background-image:image-url("chat/<%= icon %>.png");
           }
           <% end %>
         }
@@ -133,7 +133,10 @@
   }
   .input {
     form {
-      padding:0 0 12px !important;
+      padding:0 0 15px !important;
+    }
+    .form-group {
+      margin-bottom:0;
     }
     label {
       font-size:10px;

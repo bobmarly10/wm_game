@@ -24,6 +24,10 @@ en:
       ranking: Ranking
     next_game:
       title: "The next match"
+      days: days
+      hours: hours
+      minutes: minutes
+      seconds: seconds
     current_games:
       title: "Current match(es)"
     past_games:

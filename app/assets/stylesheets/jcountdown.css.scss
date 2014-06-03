@@ -34,11 +34,19 @@ Copyright (c) 2012
 
 /* group */
 .jCountdown .group{
+  position:relative;
 	padding:0px;
 	margin:0px;
     display:inline-block;
     *zoom:1;				/* IE */
     *display:inline;		/* IE */
+
+  .lbl {
+    font-size: 12px;
+    position: absolute;
+    bottom: -9px;
+    width: 100%;
+  }
 }
 
 /* label */

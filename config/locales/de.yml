@@ -24,6 +24,10 @@ de:
       ranking: "Top 25"
     next_game:
       title: "Das nächste Spiel"
+      days: Tage
+      hours: Stunden
+      minutes: Minuten
+      seconds: Sekunden
     current_games:
       title: "Aktuelle Spiele"
     past_games:

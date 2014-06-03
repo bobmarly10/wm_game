@@ -38,3 +38,7 @@ jQuery ->
       displaySecond:true,
       displayLabel:false,
       onFinish: time_is_up
+    cd.find('.group.day').append $('<div />').addClass('lbl').text(cd.data('days'))
+    cd.find('.group.hour').append $('<div />').addClass('lbl').text(cd.data('hours'))
+    cd.find('.group.minute').append $('<div />').addClass('lbl').text(cd.data('minutes'))
+    cd.find('.group.second').append $('<div />').addClass('lbl').text(cd.data('seconds'))
