@@ -63,7 +63,7 @@ Game.create!(team_a: cl, team_b: au, group: :b, start_at: Time.parse('2014-06-14
 Game.create!(team_a: co, team_b: gr, group: :c, start_at: Time.parse('2014-06-14 18:00'))
 Game.create!(team_a: uy, team_b: cr, group: :d, start_at: Time.parse('2014-06-14 21:00'))
 Game.create!(team_a: en, team_b: it, group: :d, start_at: Time.parse('2014-06-15 00:00'))
-Game.create!(team_a: cl, team_b: jp, group: :c, start_at: Time.parse('2014-06-15 03:00'))
+Game.create!(team_a: ci, team_b: jp, group: :c, start_at: Time.parse('2014-06-15 03:00'))
 # day 4
 Game.create!(team_a: ch, team_b: ec, group: :e, start_at: Time.parse('2014-06-15 18:00'))
 Game.create!(team_a: fr, team_b: hn, group: :e, start_at: Time.parse('2014-06-15 21:00'))

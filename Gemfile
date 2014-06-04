@@ -8,6 +8,7 @@ gem 'high_voltage'
 gem "therubyracer"
 gem 'mysql2'
 gem 'airbrake'
+gem 'savon'
 
 gem 'simple_enum'
 
