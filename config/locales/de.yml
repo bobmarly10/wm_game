@@ -89,8 +89,8 @@ de:
     last_2: Finale
   pages:
     faq: |
-        <h2>FAQ - Häufig gestellte Fragen</h2>
-        <h3>Wieviel Punkte gibt's wofür?</h3>
+        <h2><i class="icon-info"></i> FAQ - Häufig gestellte Fragen</h2>
+        <h3><i class="icon-question"></i> Wieviel Punkte gibt's wofür?</h3>
         <p>Du trägst für jedes Spiel die von dir geschätzten Tore ein (ggf. inkl. Elfmeterschießen).<br />
         Du erhältst Punkte je nachdem, wie gut dein Tipp war:</p>
         <p><b>1 Punkt</b> für die Abgabe des Tipps.</p>
@@ -104,12 +104,12 @@ de:
         Tatsächliches Ergebnis Team 1 gewinnt: + <b>3 Punkte</b><br />
         ... + <b>5 Punkte</b> wenn beide Torzahlen korrekt sind<br />
         ... + <b>2 Punkte</b> wenn nur eine der Torzahlen korrekt ist</p>
-        <h3>Gibt es etwas zu gewinnen?</h3>
-        <p>Nö, außer vielleicht Ruhm und Ehre.<br />
-        Wozu dann das Tippspiel, fragst du? Warum haben wir es überhaupt entwickelt? Nun, weil wir können und weil es Spaß macht :)</p>
+        <h3><i class="icon-question"></i> Gibt es etwas zu gewinnen?</h3>
+        <p>Nö, außer Ruhm und Ehre natürlich.<br />
+        Wozu dann das Tippspiel? Warum haben wir es überhaupt entwickelt? Weil wir können und weil es Spaß macht :)</p>
     howto: |
         <h2>So funktioniert's</h2>
-        <p>Dieses kleine Spiel erlaubt dir die Ergebnisse aller Spiele der EM 2012 zu tippen.<br />
+        <p>Dieses kleine Spiel erlaubt dir die Ergebnisse aller Spiele der WM 2014 zu tippen.<br />
         Je richtiger deine Tipps sind, desto mehr Punkte erhältst du.<br />
         Auf geht's, zeig der Welt dein Expertenwissen. Viel Spaß!</p>
   users:

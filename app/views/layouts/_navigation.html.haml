@@ -3,9 +3,11 @@
   .container
     .navbar-header= link_to image_tag('logo.png'), root_path
     .navbar-badge
-      .testcloud
-        &nbsp;
-        -#= link_to "www.testCloud.#{I18n.locale == :de ? 'de' : 'io'}", "https://www.testcloud.#{I18n.locale == :de ? 'de' : 'io'}/", target: :blank
+      -#.testcloud
+        = link_to "www.testCloud.#{I18n.locale == :de ? 'de' : 'io'}", "https://www.testcloud.#{I18n.locale == :de ? 'de' : 'io'}/", target: :blank
+      .faq
+        %i.icon-info
+        = link_to t('.faq'), page_path(:faq), data: { toggle: "modal", target: "#faq" }
       .invite
         %i.icon-users
         = link_to t('.invite'), '', id: 'invite_friends', data: { message: t('.invite_message') }

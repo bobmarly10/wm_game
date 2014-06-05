@@ -11,6 +11,7 @@
     = javascript_include_tag 'https://connect.facebook.net/en_US/all.js'
     = csrf_meta_tags
   %body{ :'data-appid' => Rails.application.secrets.omniauth_provider_key, :'data-invitation-url' => log_invitation_path }
+    #fb-root
     %header
       = render 'layouts/navigation'
     %main{:role => "main"}
@@ -24,3 +25,5 @@
       = link_to 'Juan Pablo Bravo', 'http://thenounproject.com/bravo', target: :blank
       at
       = link_to 'The Noun Project', 'http://thenounproject.com/', target: :blank
+
+    = render 'layouts/modals'

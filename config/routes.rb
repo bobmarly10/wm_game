@@ -27,6 +27,4 @@ Rails.application.routes.draw do
   get :past_games,    to: 'visitors#past_games'
   get :ranking,       to: 'visitors#ranking'
 
-  get ':page', :to => 'pages#show',  :constraints =>  {:page => /[a-z]\w*/ }
-
 end

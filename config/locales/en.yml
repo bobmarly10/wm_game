@@ -9,7 +9,7 @@ en:
   post_changed_bet: "I have changed my bet to  %{team_a} %{team_a_goals} : %{team_b_goals} %{team_b} via testCloud 'EM Game'"
   layouts:
     navigation:
-      logo: "EM Betting Game"
+      logo: "WM Betting Game"
       powered_by: "powered by <a href='https://www.testcloud.de/' target='_blank'><span class='tclogo'>test<span class='cloud'>Cloud</span></span></a>"
       your_score: "Your Score"
       your_rank: "Your Rank"
@@ -89,8 +89,8 @@ en:
     last_2: Final
   pages:
     faq: |
-        <h2>FAQ - Frequently Asked Questions</h2>
-        <h3>How many points for what?</h3>
+        <h2><i class="icon-info" /> FAQ - Frequently Asked Questions</h2>
+        <h3><i class="icon-question"></i> How many points for what?</h3>
         <p>Just guess the final result of the game (including penalties).<br />
         You will get points depending on how right you were:</p>
         <p><b>1 point</b> for placing your bet.</p>
@@ -104,7 +104,7 @@ en:
         Team 1 wins: + <b>3 points</b><br />
         ... + <b>5 points</b> if you guessed both goal counts right<br />
         ... + <b>2 points</b> if you guessed only on goal count right</p>
-        <h3>Is there something to win?</h3>
+        <h3><i class="icon-question"></i> Is there something to win?</h3>
         <p>Nope, except maybe fame.<br />
         Why did we create the betting game then? Well, because we can and it is fun :)</p>
     howto: |
