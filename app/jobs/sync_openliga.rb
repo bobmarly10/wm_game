@@ -43,7 +43,7 @@ class SyncOpenliga
         end
         game.save!
       end
-      Pusher['games'].trigger('score', { updates: live_updates }) unless live_updates.empty?
+      Pusher['games'].trigger('score', live_updates) unless live_updates.empty?
     else
       Rails.logger.info "-> sleeping...\n"
     end

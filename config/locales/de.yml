@@ -41,6 +41,7 @@ de:
     game_running:
       goals_title: Tore
       your_bet: "Dein Tipp"
+      no_bet: "--"
     game_ended:
       goals_title: Tore
       your_points: "Deine Punkte"

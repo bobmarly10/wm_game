@@ -41,6 +41,7 @@ en:
     game_running:
       goals_title: Goals
       your_bet: "Your bet"
+      no_bet: "--"
     game_ended:
       goals_title: Goals
       your_points: "Your points"

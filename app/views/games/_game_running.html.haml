@@ -1,7 +1,7 @@
 .team_a.col-md-3
   .flag.flaga= image_tag("flags/#{game.running? ? 48 : 32}/#{game.team_a.country.downcase}.png", alt: t(game.team_a.country, :scope => 'countries'))
   .country= t(game.team_a.country, :scope => 'countries')
-.col-md-2.goals
+.col-md-2.goals.goals_a
   .goals_title= t('.goals_title')
   .value= game.team_a_goals || 0
 .col-md-2
@@ -13,7 +13,7 @@
       %span.bet_b= bet.team_b_goals
     - else
       %p.no_bet= t('.no_bet')
-.col-md-2.goals
+.col-md-2.goals.goals_b
   .goals_title= t('.goals_title')
   .value= game.team_b_goals || 0
 .team_b.col-md-3
