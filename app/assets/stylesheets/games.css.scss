@@ -19,6 +19,7 @@
       .bar {
         @include border-radius(4px);
         height:10px;
+        background-color:#CCC;
       }
     }
   }
