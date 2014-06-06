@@ -7,7 +7,7 @@ class Invitation < ActiveRecord::Base
   def self.save_invitations(user, request_ids)
     request_ids = request_ids.split(',')
     request_ids.each do |request_id|
-      inv = Invitation.find_by_guest_id_and_request_id(user.facebook_idx, request_id)
+      inv = Invitation.find_by_guest_id_and_request_id(user.uid, request_id)
       if inv
         inv.accepted_at ||= Time.now
         inv.save!
