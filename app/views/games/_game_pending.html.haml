@@ -1,8 +1,8 @@
 .row
-  .team_a.col-md-4
+  .team_a.col-md-4.col-sm-4
     .flag.flaga= image_tag("flags/#{game.running? ? 48 : 32}/#{game.team_a.country.downcase}.png", alt: t(game.team_a.country, :scope => 'countries'))
     .country= t(game.team_a.country, :scope => 'countries')
-  .col-md-4.infos
+  .col-md-4.infos.col-sm-4
     .round= t(game.round, scope: 'rounds')
     .date= l(game.start_at, format: :default)
     .button
@@ -12,6 +12,6 @@
       - else
         = link_to t('.bet'), new_bet_path, :class => 'fancy button-xs'
     .bet_form= render 'bets/form', bet: bet || Bet.new(game_id: game.id)
-  .team_b.col-md-4
+  .team_b.col-md-4.col-sm-4
     .flag.flagb= image_tag("flags/#{game.running? ? 48 : 32}/#{game.team_b.country.downcase}.png", alt: t(game.team_b.country, :scope => 'countries'))
     .country= t(game.team_b.country, :scope => 'countries')
