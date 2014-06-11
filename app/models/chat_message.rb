@@ -1,4 +1,5 @@
 class ChatMessage < ActiveRecord::Base
+  include ActionView::Helpers::SanitizeHelper
 
   ICONS = [:ball, :smile, :sad, :laugh, :wink, :tongue, :coffee, :thumb_up, :thumb_down, :world, :music, :sun, :rain, :cloudy, :clouds, :lightning, :warn]
 
@@ -34,7 +35,7 @@ class ChatMessage < ActiveRecord::Base
   end
 
   def html_body
-    body.gsub(/:([a-z]{2}):/, '<span class="flag \1" />').gsub(/:(#{ICONS.join('|')}):/, '<span class="\1" />').gsub(/\n/, '<br />')
+    strip_tags(body).gsub(/:([a-z]{2}):/, '<span class="flag \1" />').gsub(/:(#{ICONS.join('|')}):/, '<span class="\1" />').gsub(/\n/, '<br />')
   end
 
   def self.json_options

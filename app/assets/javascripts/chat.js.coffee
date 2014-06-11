@@ -21,7 +21,7 @@ jQuery ->
       $author       = $("<span />").addClass("author").addClass(json.author_locale)
       $author.text("#{json.author_name} (#{json.author_points}), ").append($timestamp)
       $author_image = $("<img />").addClass("author_image").attr('src', json.author_image)
-    $text         = $("<span />").addClass("text bubble").text json.html_body
+    $text         = $("<span />").addClass("text bubble").html json.html_body
     $("<div />").addClass("message").append($author).append($author_image).append($text)
 
   $("#chat").livequery ->
