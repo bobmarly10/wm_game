@@ -18,7 +18,7 @@ class SyncOpenliga
       response = liga.request('matchdata_by_group_league_saison',
                                 groupOrderId: 1,
                                 leagueSaison: 2014,
-                                leagueShortcut: 'wm-2014')
+                                leagueShortcut: 'WM-2014')
       I18n.locale = :de
       Game.without_oldb_idx.each do |game|
         oldb_team1 = I18n.t(game.team_a.country, :scope => 'countries')
