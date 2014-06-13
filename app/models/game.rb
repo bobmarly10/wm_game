@@ -72,7 +72,9 @@ class Game < ActiveRecord::Base
 
 
   def update_from_oldb( oldb_match )
-    current_score = oldb_match[:match_results][:match_result].sort {|mr1,mr2| mr1[:result_order_id] <=> mr2[:result_order_id] }.last
+    match_results = oldb_match[:match_results][:match_result]
+    match_results = [match_results] unless match_results.is_a?(Array)
+    current_score = match_results.sort {|mr1,mr2| mr1[:result_order_id] <=> mr2[:result_order_id] }.last
     return unless current_score
     self.updated_from_oldb_match = true
     self.team_a_goals = current_score[:points_team1].to_i  unless current_score[:points_team1].to_i == -1
