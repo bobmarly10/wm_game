@@ -35,7 +35,7 @@ class SyncOpenliga
       live_updates = []
       Game.running.each do |game|
         raise "game #{game.id} has no oldb_idx!" unless game.oldb_idx
-        oldb_match = response[:matchdata].select {|m| m[:match_id].eql?(game.oldb_idx.to_s) }.first
+        oldb_match = response[:matchdata].find {|m| m[:match_id].eql?(game.oldb_idx.to_s) }
         game.update_from_oldb( oldb_match )
         game.end_at = Time.current            if oldb_match[:match_is_finished]
         if game.team_a_goals_changed? || game.team_b_goals_changed? || game.end_at_changed?

@@ -16,7 +16,7 @@ jQuery ->
         dataType: "html",
         success: (data)->
           $("#next_game").hide();
-          $("#current_games_container").show().html(data)
+          $("#current_games_container").removeClass("hidden").show().html(data)
 
   $("#countdown").livequery ->
     cd = $(this)
