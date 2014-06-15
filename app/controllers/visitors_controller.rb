@@ -13,7 +13,7 @@ class VisitorsController < ApplicationController
     @past_games     = Game.ended.order('start_at DESC')
     @bets           = current_user.fetch_bets
     @chat_message   = ChatMessage.new
-    @chat_messages  = ChatMessage.order('id DESC').limit(10)
+    @chat_messages  = ChatMessage.order('id DESC').limit(25)
     @bet            = Bet.new
   end
 
