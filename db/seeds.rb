@@ -51,6 +51,41 @@ dz = Team.create!(country: 'DZ', group: :h)
 ru = Team.create!(country: 'RU', group: :h)
 kr = Team.create!(country: 'KR', group: :h)
 
+
+
+br = Team.find_by(country: 'BR')
+hr = Team.find_by(country: 'HR')
+mx = Team.find_by(country: 'MX')
+cm = Team.find_by(country: 'CM')
+es = Team.find_by(country: 'ES')
+nl = Team.find_by(country: 'NL')
+cl = Team.find_by(country: 'CL')
+au = Team.find_by(country: 'AU')
+co = Team.find_by(country: 'CO')
+gr = Team.find_by(country: 'GR')
+ci = Team.find_by(country: 'CI')
+jp = Team.find_by(country: 'JP')
+uy = Team.find_by(country: 'UY')
+cr = Team.find_by(country: 'CR')
+en = Team.find_by(country: 'EN')
+it = Team.find_by(country: 'IT')
+ch = Team.find_by(country: 'CH')
+ec = Team.find_by(country: 'EC')
+fr = Team.find_by(country: 'FR')
+hn = Team.find_by(country: 'HN')
+ar = Team.find_by(country: 'AR')
+ba = Team.find_by(country: 'BA')
+ir = Team.find_by(country: 'IR')
+ng = Team.find_by(country: 'NG')
+de = Team.find_by(country: 'DE')
+pt = Team.find_by(country: 'PT')
+gh = Team.find_by(country: 'GH')
+us = Team.find_by(country: 'US')
+be = Team.find_by(country: 'BE')
+dz = Team.find_by(country: 'DZ')
+ru = Team.find_by(country: 'RU')
+kr = Team.find_by(country: 'KR')
+
 # round 1
 
 # day 1
@@ -119,10 +154,10 @@ Game.create!(team_a: dz, team_b: ru, group: :h, start_at: Time.parse('2014-06-26
 
 
 # 1/8 finals
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-28 18:00'))
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-28 22:00'))
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-29 18:00'))
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-29 22:00'))
+Game.create!(team_a: br, team_b: ch, finals: :last_16, start_at: Time.parse('2014-06-28 18:00'))
+Game.create!(team_a: co, team_b: uy, finals: :last_16, start_at: Time.parse('2014-06-28 22:00'))
+Game.create!(team_a: nl, team_b: mx, finals: :last_16, start_at: Time.parse('2014-06-29 18:00'))
+Game.create!(team_a: cr, team_b: gr, finals: :last_16, start_at: Time.parse('2014-06-29 22:00'))
 #Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-30 18:00'))
 #Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-06-30 22:00'))
 #Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-07-01 18:00'))
