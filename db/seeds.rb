@@ -159,9 +159,9 @@ Game.create!(team_a: co, team_b: uy, finals: :last_16, start_at: Time.parse('201
 Game.create!(team_a: nl, team_b: mx, finals: :last_16, start_at: Time.parse('2014-06-29 18:00'))
 Game.create!(team_a: cr, team_b: gr, finals: :last_16, start_at: Time.parse('2014-06-29 22:00'))
 Game.create!(team_a: fr, team_b: ng, finals: :last_16, start_at: Time.parse('2014-06-30 18:00'))
-Game.create!(team_a: ar, team_b: ch, finals: :last_16, start_at: Time.parse('2014-06-30 22:00'))
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-07-01 18:00'))
-#Game.create!(team_a: , team_b: , finals: :last_16, start_at: Time.parse('2014-07-01 22:00'))
+Game.create!(team_a: de, team_b: dz, finals: :last_16, start_at: Time.parse('2014-06-30 22:00'))
+Game.create!(team_a: ar, team_b: ch, finals: :last_16, start_at: Time.parse('2014-07-01 18:00'))
+Game.create!(team_a: be, team_b: us, finals: :last_16, start_at: Time.parse('2014-07-01 22:00'))
 
 # 1/4 finals
 #Game.create!(team_a: , team_b: , finals: :last_8, start_at: Time.parse('2014-07-04 18:00'))
