@@ -29,7 +29,7 @@ class SyncOpenliga
         if oldb_match
           game.update_attribute(:oldb_idx, oldb_match[:match_id])
         else
-          raise "could not find match #{game.id} (#{oldb_team1} vs. #{oldb_team2})"
+          #raise "could not find match #{game.id} (#{oldb_team1} vs. #{oldb_team2})"
         end
       end
       live_updates = []
