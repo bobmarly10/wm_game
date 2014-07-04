@@ -16,7 +16,7 @@ class SyncOpenliga
       require 'openligadb'
       liga = OpenLigaDB.new
       response = liga.request('matchdata_by_group_league_saison',
-                                groupOrderId: 2,
+                                groupOrderId: 3,
                                 leagueSaison: 2014,
                                 leagueShortcut: 'WM-2014')
       I18n.locale = :de
