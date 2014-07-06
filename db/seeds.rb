@@ -170,8 +170,8 @@ Game.create!(team_a: ar, team_b: be, finals: :last_8, start_at: Time.parse('2014
 Game.create!(team_a: nl, team_b: cr, finals: :last_8, start_at: Time.parse('2014-07-05 22:00'))
 
 # 1/2 finals
-#Game.create!(team_a: , team_b: , finals: :last_4, start_at: Time.parse('2014-07-08 22:00'))
-#Game.create!(team_a: , team_b: , finals: :last_4, start_at: Time.parse('2014-07-09 22:00'))
+Game.create!(team_a: br, team_b: de, finals: :last_4, start_at: Time.parse('2014-07-08 22:00'))
+Game.create!(team_a: nl, team_b: ar, finals: :last_4, start_at: Time.parse('2014-07-09 22:00'))
 
 # 3rd place
 #Game.create!(team_a: , team_b: , finals: :last_2, start_at: Time.parse('2014-07-12 22:00'))
