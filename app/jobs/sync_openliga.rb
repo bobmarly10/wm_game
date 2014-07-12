@@ -25,7 +25,9 @@ class SyncOpenliga
         oldb_team2 = I18n.t(game.team_b.country, :scope => 'countries')
         #oldb_team1 = country_map(oldb_team1)
         #oldb_team2 = country_map(oldb_team2)
-        oldb_match = response[:matchdata].select {|m| m[:name_team1].eql?(oldb_team1) && m[:name_team2].eql?(oldb_team2) }.first
+        matchdata = response[:matchdata]
+        matchdata = [matchdata] unless matchdata.is_a?(Array)
+        oldb_match = matchdata.select {|m| m[:name_team1].eql?(oldb_team1) && m[:name_team2].eql?(oldb_team2) }.first
         if oldb_match
           game.update_attribute(:oldb_idx, oldb_match[:match_id])
         else
